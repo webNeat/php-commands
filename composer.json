@@ -1,0 +1,17 @@
+{
+    "name": "wn/commands",
+    "description": "Some useful commands",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Amine Ben hammou",
+            "email": "webneat@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Wn\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,5 @@
+about
+vendor
+storage/data
+tests/tmp
+*.sublime-*
