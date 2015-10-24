@@ -1,4 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-echo 'Hi !', PHP_EOL;
+use Symfony\Component\VarDumper\VarDumper;
+
+require __DIR__ . '/../bootstrap.php';
+
