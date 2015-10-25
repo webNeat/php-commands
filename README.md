@@ -1,3 +1,3 @@
 # Commands
 
-A bunch of useful command line applications made with PHP.
+A bunch of useful command line tools made with PHP.
