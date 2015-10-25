@@ -1,6 +1,6 @@
 {
     "name": "wn/commands",
-    "description": "Some useful commands",
+    "description": "A framework to make command line applications",
     "license": "MIT",
     "authors": [
         {

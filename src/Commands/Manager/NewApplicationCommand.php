@@ -23,6 +23,8 @@ class NewApplicationCommand extends BaseCommand {
 
         $this->fs->put($path, $content);
 
+        chmod($path, 0755);
+
         $this->info("{$name} application created");
     }
     

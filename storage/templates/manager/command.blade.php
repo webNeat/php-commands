@@ -1,18 +1,16 @@
-<?='<?php';?> namespace Wn\Commands\Manager;
+<?='<?php';?> namespace Wn\Commands;
 
 use Wn\Commands\BaseCommand;
-use Wn\Settings;
-use Wn\Vars;
 
 
 class {{$name}}Command extends BaseCommand {
 
     protected $signature = '{{$cmd}}
     @foreach ($args as $arg)
-    {{'{'.$arg['name']}}: {{$arg['descr']}}.}
+    {{'{'.$arg['name']}} : {{$arg['descr']}}.}
     @endforeach
 @foreach ($opts as $opt)
-    {{'{--'.$opt['name']}}= : {{$opt['descr']}}.}
+    {{'{--'.$opt['name']}} : {{$opt['descr']}}.}
     @endforeach';
 
     protected $description = '{{$descr}}';
