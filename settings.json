@@ -2,5 +2,6 @@
   "templatesPath": "/storage/templates",
   "cachePath": "/storage/cache",
   "dataPath": "/storage/data",
-  "formatsPath": "/storage/formats"
+  "formatsPath": "/storage/formats",
+  "defaultCommandPath": "my-commands"
 }

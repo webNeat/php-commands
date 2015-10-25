@@ -44,7 +44,11 @@ class NewCommandCommand extends BaseCommand {
     {
         $path = $this->option('path');
         if(! $path){
-            $path = 'src/Commands';
+            if($this->setts->has('defaultCommandPath')){
+                $path = $this->setts->get('defaultCommandPath');
+            } else {
+                $path = 'src/Commands';            
+            }
         }
 
         return Vars::get('root') . "/{$path}/{$name}Command.php";

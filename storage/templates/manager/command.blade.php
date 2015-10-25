@@ -1,4 +1,4 @@
-<?='<?php';?> namespace Wn\Commands;
+<?='<?php';?> namespace MyCommands;
 
 use Wn\Commands\BaseCommand;
 
