@@ -4,15 +4,18 @@ require __DIR__ . '/vendor/autoload.php';
 use Illuminate\Filesystem\Filesystem;
 use Philo\Blade\Blade;
 use Wn\Settings;
+use Wn\Vars;
 
-// Declaring filesystem
-$fs = new Filesystem;
+Vars::set('root', __DIR__ . '/');
 
-// Loading settings
-$settings = new Settings($fs, __DIR__ . '/settings.json');
+Vars::set('fs', new Filesystem);
 
-// Declaring Template Engine
-$blade = new Blade(
-    __DIR__ . $settings->get('templatesPath'),    
-    __DIR__ . $settings->get('cachePath')    
+Vars::set('setts', new Settings(
+    Vars::get('fs'),
+    __DIR__ . '/settings.json')
 );
+
+Vars::set('templates', $blade = new Blade(
+    Vars::get('setts')->path('templatesPath'),    
+    Vars::get('setts')->path('cachePath')
+));

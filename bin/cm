@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+
+use Symfony\Component\Console\Application;
+use Wn\Commands\Manager\NewApplicationCommand;
+use Wn\Commands\Manager\NewCommandCommand;
+
+require __DIR__ . '/../bootstrap.php';
+
+$app = new Application('Commands Manager', '1.0');
+
+$app->add(new NewApplicationCommand);
+$app->add(new NewCommandCommand);
+
+$app->run();

@@ -1,7 +1,8 @@
 <?php namespace Wn\IO\Parser;
 
-use Wn\IO\ParserInterface;
 use Exception;
+use Wn\Exceptions\ParserException;
+use Wn\IO\ParserInterface;
 
 
 class Json implements ParserInterface {
@@ -17,7 +18,7 @@ class Json implements ParserInterface {
         $object = json_decode($encodedString);
         
         if (json_last_error() !== JSON_ERROR_NONE) {
-            throw new Exception("Error while parsing JSON");
+            throw new ParserException("Error while parsing JSON");
         }
 
         return $object;
@@ -34,7 +35,7 @@ class Json implements ParserInterface {
         $json = json_encode($data);
 
         if($json === false){
-            throw new Exception("Cannot encode the data to JSON");
+            throw new ParserException("Cannot encode the data to JSON");
         }
 
         return $json;

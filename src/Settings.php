@@ -94,6 +94,20 @@ class Settings {
     }
 
     /**
+     * Gets a setting value as a full path.
+     * 
+     * @param  String $name
+     * @return mixed
+     */
+    public function path($name)
+    {
+        if($this->has($name)) {
+            return dirname($this->path) . $this->data->$name;
+        }
+        return null;
+    }
+
+    /**
      * Returns true if setting exists.
      * 
      * @param  string  $name
@@ -103,5 +117,7 @@ class Settings {
     {
         return isset($this->data->$name);
     }
+
+
 
 }

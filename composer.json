@@ -9,11 +9,11 @@
         }
     ],
     "require": {
-        "symfony/console": "^2.7",
         "danielstjules/stringy": "^2.1",
         "philo/laravel-blade": "2.*",
         "symfony/yaml": "^2.7",
-        "symfony/var-dumper": "^2.7"
+        "symfony/var-dumper": "^2.7",
+        "illuminate/console": "^5.1"
     },
     "autoload": {
         "psr-4": {
