@@ -34,7 +34,7 @@ cm new-cmd hi --descr="A demo cmd" --args="name: The name" --opts="short: A shor
 
 This will create a new command class file `src/Commands/HiCommand.php`.
 
-```
+```php
 <?php namespace Wn\Commands;
 
 use Wn\Commands\BaseCommand;
@@ -65,7 +65,7 @@ Hello {{$name}}, how are you doing today ?
 
 Next we fill the execute method:
 
-```
+```php
 public function execute()
 {
     $name = $this->argument('name');
@@ -82,7 +82,7 @@ public function execute()
 
 The last step is the add the command to our foo application.
 
-```
+```php
 #!/usr/bin/env php
 <?php
 
