@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+
+use MyCommands\Downloader\AddAnimeDownloader;
+use MyCommands\Downloader\YoutubeDownloader;
+use Symfony\Component\Console\Application;
+
+require __DIR__ . '/../bootstrap.php';
+
+$app = new Application('dl', '1.0');
+
+$app->add(new YoutubeDownloader);
+$app->add(new AddAnimeDownloader);
+
+$app->run();
