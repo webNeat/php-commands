@@ -32,10 +32,10 @@ The application will include two commands by default: `list` and `help`. To add 
 cm new-cmd hi --descr="A demo cmd" --args="name: The name" --opts="short: A short greeting"
 ```
 
-This will create a new command class file `src/Commands/HiCommand.php`.
+This will create a new command class file `my-commands/HiCommand.php`.
 
 ```php
-<?php namespace Wn\Commands;
+<?php namespace MyCommands;
 
 use Wn\Commands\BaseCommand;
 
@@ -87,7 +87,7 @@ The last step is the add the command to our foo application.
 <?php
 
 use Symfony\Component\Console\Application;
-use Wn\Commands\HiCommand;
+use MyCommands\HiCommand;
 
 require __DIR__ . '/../bootstrap.php';
 
