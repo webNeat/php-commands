@@ -1,0 +1,33 @@
+dl: Downloader app
+  yt: Download from youtube
+  aa: Download from add-anime.net
+  oa: Download from okanime.com
+  lc: Download from Laracasts
+
+f: Files handler
+  make: Make a structure of files and directories based on a text file
+  merge: Merge multiple files into one
+  rename: Rename multiple files using a pattern
+
+md: Media files handler
+  to-mp3: Convert files to an mp3
+
+cg: Code generator
+  class: Generates a class for an OOP language
+
+pg: Project Generator (something like yeoman generators)
+  php: Create new PHP package
+  node: Create new node package
+  lumen: Create new REST API using Lumen
+  ng: Create new Angular web app
+  qt: Create new Qt/QML project
+
+todo: Task Manager
+  add: Add new task
+  list: Show the list of tasks
+  mod: Edit a task
+  del: Delete a task
+  done: Mark a task as done
+  
+o: Any other command
+  minify-xsd: Convert XSD file to readable YAML file
